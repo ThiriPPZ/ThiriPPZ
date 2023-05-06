@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+}
+
+/* header */
+header {
+display: flex;
+justify-content: space-between;
+padding: 20px 40px 20px 40px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header .nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+header img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+/* Banner */
+#banner {
+    background-image: url(Images/BG.jpg);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    padding:200px 0px 200px 0px;
+}
+
+#banner h1 {
+    font-size: 50px;
+}
+
+#banner p {
+    margin:30px 0px 30px 0px;
+}
+
+#banner .about {
+    display: inline-block;
+    background-color: darkcyan;
+    color:#fff;
+    text-decoration: none;
+    border: 3px solid cadetblue;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+#banner .about:hover {
+    background-color: cadetblue;
+}
+
+/* About me */
+#about-me {
+    background-color:rgb(154, 186, 245);
+    padding: 25px 0px 25px 0px;
+}
+
+#about-me .title {
+    text-align: center;
+}
+
+#about-me .title h2 {
+    margin-top: 0px;
+}
+
+.about-container {
+    display:flex;
+}
+
+.about-container .get-to-know, 
+.about-container .skills {
+    width:48%;
+    margin-left: 30px;
+}
+
+.about-container .get-to-know .project {
+    display: inline-block;
+    background-color: darkcyan;
+    color:#fff;
+    text-decoration: none;
+    border: 3px solid cadetblue;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.about-container .get-to-know .project:hover {
+    background-color: cadetblue;
+}
+
+.about-container {
+    padding-bottom:40px;
+}
+
+.about-container .skills .skill-list span {
+    background:linear-gradient(darkcyan, cadetblue);
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid rgb(40, 149, 141);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display:inline-block;
+}
+
+.get-to-know p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+/* Projects */
+#project .title {
+    padding: 25px 0px 25px 0px;
+    text-align: center; 
+}
+
+#project img {
+    width: 100%;
+}
+
+.project1-container,
+.project2-container,
+.project3-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.project1-container div,
+.project2-container div,
+.project3-container div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.project1-container h3,
+.project2-container h3,
+.project3-container h3 {
+    color:plum;
+}
+
+.project1-container p,
+.project2-container p,
+.project3-container p {
+    line-height: 28px;
+}
+
+/* Footer */
+footer {
+    background-color:darkcyan;
+    padding: 25px 20px 0px 20px;
+}
+
+footer  h3{
+text-align: center;
+color:#fff;
+margin-bottom: 5px;
+}
+
+footer .social-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .social-container img {
+    width:30px;
+    background-color:rgba(97, 200, 204, 0.351);
+    border-radius: 45%;
+    padding:5px;
+    margin:15px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    padding: 10px;
+}
+
+.copyright {
+    padding:30px;
+    border-top: 1px solid #fff;
+}
+
+@media only screen and (max-width: 620px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        justify-content: center;
+    }
+
+    header .nav ul {
+        padding: 0px;
+        justify-content: center;
+    }
+
+    header .nav a {
+        margin:0px 15px;
+    }
+
+    #banner {
+        padding:100px 0px;
+    }
+
+    #banner {
+        font-size: 30px;
+    }
+
+    .about-container .get-to-know,
+    .about-container .skills {
+        width:100%;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .project1-container,
+    .project2-container,
+    .project3-container {
+        flex-wrap: wrap;
+    }
+
+    .project1-container div,
+    .project2-container div,
+    .project3-container div {
+        width: 100%;
+    }
+
+}
